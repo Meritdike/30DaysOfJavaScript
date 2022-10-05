@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>30DaysOfScript:Inline Script</title>
+    <script>
+        console.log('Welcome to 30DaysOfJavaScript') //INTERNAL JAVASCRIPT
+    </script>
+  </head>
+  <body>
+    <button onclick="alert('Welcome to 30DaysOfJavaScript!')">Click Me</button>  <!-- INLINE JAVASCRIPT -->
+    <script>
+        console.log('Welcome to 30DaysOfJavaScript') //INTERNAL JAVASCRIPT (PREFERRED OPTION)
+    </script>
+    <script src="introduction.js"></script> <!-- EXTERNAL JAVASCRIPT -->
+    <script src="helloworld.js"></script> <!-- line: 14 and line: 15 are multiple external js scripts -->
+    <script src="main.js"></script> <!-- Your main.js file should be below all other scripts. It is very important to remember this. -->
+  </body>
+</html>
