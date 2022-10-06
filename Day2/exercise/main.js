@@ -92,3 +92,19 @@ console.log(because)
 console.log(twister.replace(because, ''))
 
 //LEVEL 3
+let loveSentence = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+console.log(loveSentence.match(/love/gi).length
+)
+console.log(twister.match(/because/gi).length)
+
+const sentence2 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+let charEx = /[^A-Za-z0-9 ]/g  //added space after 9 to keep space in the string ie not replace space
+let sentenceMatch = sentence2.match(charEx)
+console.log(sentenceMatch)
+console.log(sentence2.replace(charEx, ''))
+
+let incomeStatement = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+let income = /\d+/g
+let annualIncome = incomeStatement.match(income)
+let sum = parseInt(annualIncome[0] * 12) + parseInt(annualIncome[1]) + parseInt(annualIncome[annualIncome.length - 1] * 12)
+console.log(sum)
