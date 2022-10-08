@@ -144,11 +144,11 @@ number > 0
   ? console.log(`${number} is a positive number`)
   : console.log(`${number} is a negative number`)
 
-// let number = prompt('Enter number', 'number goes here{NOTE - This goes inside the input box}')
-// console.log(number)
+let number1 = prompt('Enter number', 'number goes here{NOTE - This goes inside the input box}')
+console.log(number1)
 
-// const agree = confirm('Are you sure you like to delete? ')
-// console.log(agree) // result will be true or false based on what you click on the dialog box
+const agree = confirm('Are you sure you like to delete? ')
+console.log(agree) // result will be true or false based on what you click on the dialog box
 
 // DATE OBJECT
 const now = new Date()
