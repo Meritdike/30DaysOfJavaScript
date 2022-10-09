@@ -66,49 +66,49 @@ switch(weather) {
         console.log('No need for rain coat.')
 }
 
-// let dayInput = prompt('What day is today')
-// let day = dayInput.toUpperCase()
+let dayInput = prompt('What day is today')
+let day = dayInput.toUpperCase()
 
-// switch(day) {
-//   case 'MONDAY':
-//     console.log('Today is Monday')
-//     break
-//   case 'TUESDAY':
-//     console.log('Today is Tuesday')
-//     break
-//   case 'WEDNESDAY':
-//     console.log('Today is Wednesday')
-//     break
-//   case 'THURSDAY':
-//     console.log('Today is Thursday')
-//     break
-//   case 'FRIDAY':
-//     console.log('Today is Friday')
-//     break
-//   case 'SATURDAY':
-//     console.log('Today is Saturday')
-//     break
-//   case 'SUNDAY':
-//     console.log('Today is Sunday')
-//     break
-//   default:
-//     console.log('It is not a week day. Please input the correct day')
-// }
+switch(day) {
+  case 'MONDAY':
+    console.log('Today is Monday')
+    break
+  case 'TUESDAY':
+    console.log('Today is Tuesday')
+    break
+  case 'WEDNESDAY':
+    console.log('Today is Wednesday')
+    break
+  case 'THURSDAY':
+    console.log('Today is Thursday')
+    break
+  case 'FRIDAY':
+    console.log('Today is Friday')
+    break
+  case 'SATURDAY':
+    console.log('Today is Saturday')
+    break
+  case 'SUNDAY':
+    console.log('Today is Sunday')
+    break
+  default:
+    console.log('It is not a week day. Please input the correct day')
+}
 
-// num = prompt('Enter a number')
-// switch(true) {
-//   case num < 0:
-//     console.log('Number is negative')
-//     break
-//   case num === 0:
-//     console.log('Number is zero')
-//     break
-//   case num > 0:
-//     console.log('Number is positive')
-//     break
-//   default:
-//     console.log('Entered value was not a number. Please input a number')
-// }
+num = prompt('Enter a number')
+switch(true) {
+  case num < 0:
+    console.log('Number is negative')
+    break
+  case num === 0:
+    console.log('Number is zero')
+    break
+  case num > 0:
+    console.log('Number is positive')
+    break
+  default:
+    console.log('Entered value was not a number. Please input a number')
+}
 
 //TERNARY OPERATORS
 isRaining = prompt('Today is a rainny day. Enter true or false')
