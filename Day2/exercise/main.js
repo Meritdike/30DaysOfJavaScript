@@ -102,6 +102,7 @@ let sentenceMatch = sentence2.match(charEx)
 console.log(sentenceMatch)
 let newSentence = sentence2.replace(charEx, '')
 console.log(newSentence)
+
 console.log(newSentence.match(/\bi\b/gi).length)
 console.log(newSentence.match(/\bam\b/gi).length)
 console.log(newSentence.match(/\ba\b/gi).length)
