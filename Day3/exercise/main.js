@@ -94,15 +94,14 @@ let area = pi * r * r
 let circumference = 2 * pi * r
 alert(`The area is ${area} and circumference is ${circumference}`)
 
-// equation: y = 2x-2. Find slope, x and y intercepts. formular: y=mx-b where m=slope
-let M = 2
-let Y = 1
-let B = -2
+// equation: y = 2x-2. Find slope, x and y intercepts. formular: y=mx+c where m=slope
+let m = 2
+let c = -2
 
-let slope1 = M/Y
+let slope1 = m
 console.log(`Slope = ${slope1}`)
-console.log(`x-intercept = ${-B/M}`)
-console.log(`y-intercept = ${B/M}`)
+console.log(`x-intercept = ${-c/m}`) // where y = 0;
+console.log(`y-intercept = ${c}`) //y-intercept is usually equal to the slope in a linear equation which is c in this case
 
 //equation: (x1: 2, y1: 2)(x2: 6, y2: 10)
 let x1 = 2
@@ -122,7 +121,6 @@ x = -6
 x = -3 //at -3, y=0
 let y = x**2 + 6*x +9
 console.log(y)
-
 
 let hours = parseFloat(prompt('Enter hours: '))
 let hoursPerRate = parseFloat(prompt('Enter hours per rate: '))
