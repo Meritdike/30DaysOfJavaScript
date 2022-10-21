@@ -122,7 +122,6 @@ x = -3 //at -3, y=0
 let y = x**2 + 6*x +9
 console.log(y)
 
-
 let hours = parseFloat(prompt('Enter hours: '))
 let hoursPerRate = parseFloat(prompt('Enter hours per rate: '))
 let result = hours * hoursPerRate
