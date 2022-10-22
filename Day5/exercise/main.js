@@ -1,8 +1,8 @@
 import { countries } from "./countries.js"
 import { webTechs } from "./web_techs.js"
 
-console.log(countries)
-console.log(webTechs)
+// console.log(countries)
+// console.log(webTechs)
 
 //LEVEL 1
 const arr = Array()
@@ -72,3 +72,42 @@ console.log(lastComapany)
 console.log(itCompanies.splice())
 
 //LEVEL 2
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+let word = text.replace(/[^a-z0-9\s]/ig, '').split(" ")
+console.log(word)
+console.log(word.length)
+
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.unshift('Meat')
+console.log(shoppingCart)
+shoppingCart.push('Sugar')
+console.log(shoppingCart)
+shoppingCart.splice(-2, 1)
+console.log(shoppingCart)
+shoppingCart.splice(-2, 1, 'Green Tea')
+console.log(shoppingCart)
+
+let countriesCheck = countries.includes('Ethiopia')
+console.log(countriesCheck)
+switch(countriesCheck) {
+    case true:
+        console.log('Ethiopia'.toUpperCase())
+        break;
+    default:
+        countries.push('Ethiopia')
+        console.log(countries)
+}
+
+let web_techsCheck = webTechs.indexOf('Sass')
+console.log(web_techsCheck)
+web_techsCheck == -1
+? webTechs.push('Sass')
+: console.log('Sass is a CSS preprocess')
+console.log(webTechs)
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+
+const fullStack = frontEnd.concat(backEnd)
+
+console.log(fullStack)
