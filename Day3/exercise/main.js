@@ -96,7 +96,7 @@ alert(`The area is ${area} and circumference is ${circumference}`)
 
 // equation: y = 2x-2. Find slope, x and y intercepts. formular: y=mx+c where m=slope
 let m = 2
-let c = -2
+c = -2
 
 let slope1 = m
 console.log(`Slope = ${slope1}`)
