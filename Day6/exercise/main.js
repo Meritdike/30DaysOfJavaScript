@@ -186,3 +186,11 @@ for (let i = 0; i < 6; i++) {
     randChar += char
 }
 console.log(randChar)
+
+let randidLength = Math.floor(Math.random() * 30)
+let randId = ''
+for (let i = 0; i < randidLength; i++) {
+    let char = characters[Math.floor(Math.random() * characters.length)]
+    randId += char
+}
+console.log(randId)
