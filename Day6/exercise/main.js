@@ -577,3 +577,26 @@ for (const country of longCountries) {
 }
 console.log(fourCountries)
 
+const twoOrMoreWordsCountries = []
+for (const country of longCountries) {
+    if (country.indexOf(' ') > 0) {
+        twoOrMoreWordsCountries.push(country)
+    }
+}
+console.log(twoOrMoreWordsCountries)
+
+let cpylongCountries = [...longCountries]
+console.log(cpylongCountries)
+
+const revCountries = []
+for (const country of longCountries.reverse()) {
+    revCountries.push(country.toUpperCase())
+}
+console.log(revCountries)
+
+//another way to reverse countries
+const revCountries2 = []
+for (let i = cpylongCountries.length - 1; i >= 0 ; i--) {
+    revCountries2.push(cpylongCountries[i].toUpperCase())
+}
+console.log(revCountries2)
