@@ -159,19 +159,19 @@ for (let i = 0; i < 101; i++) {
 }
 console.log(`The sum of all evens from 0 to 100 is ${evenSum}. And the sum of all odds from 0 to 100 is ${oddSum}.`)
 
-let evenArr = []
-let oddArr = []
+const evenArr = []
+const oddArr = []
 evenArr.push(evenSum)
 oddArr.push(oddSum)
 console.log(evenArr.concat(oddArr))
 
-let randArr = []
+const randArr = []
 for(let i = 0; i < 5; i++) {
     randArr.push(Math.floor(Math.random() * 11))
 }
 console.log(randArr)
 
-let uniqueArr = [] 
+const uniqueArr = [] 
 while(uniqueArr.length < 5) {
     let uniqueNum = Math.floor(Math.random() * 10)
     if (uniqueArr.includes(uniqueNum) == true) continue             
@@ -187,6 +187,7 @@ for (let i = 0; i < 6; i++) {
 }
 console.log(randChar)
 
+//LEVEL 2
 let randidLength = Math.floor(Math.random() * 30)
 let randId = ''
 for (let i = 0; i < randidLength; i++) {
@@ -194,3 +195,142 @@ for (let i = 0; i < randidLength; i++) {
     randId += char
 }
 console.log(randId)
+
+let hex = '#'
+let hexCharacters = '012346789abcdef'
+for (let i = 0; i < 6; i++) {
+    let char = characters[Math.floor(Math.random() * hexCharacters.length)]
+    hex += char
+}
+console.log(hex)
+
+let red = Math.floor(Math.random() * 256)
+let green = Math.floor(Math.random() * 256)
+let blue = Math.floor(Math.random() * 256)
+
+let rgb = `rgb(${red}, ${green}, ${blue})`
+console.log(rgb)
+
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Iceland',
+    'Japan',
+    'Kenya'
+]
+
+const newCountries = []
+for(const country of countries) {
+    newCountries.push(country.toUpperCase())
+}
+console.log(newCountries)
+
+const countryLength = []
+for (const country of countries) {
+    countryLength.push(country.length)
+}
+console.log(countryLength)
+
+const allCountries = []
+for (const country of countries) {
+    let eachCountry = [country, country.slice(0, 3).toUpperCase(), country.length]
+    allCountries.push(eachCountry)
+}
+console.log(allCountries)
+
+const countryLand = []
+for (const country of countries) {
+    if (country.match('land')){
+       countryLand.push(country)
+    } else continue
+}
+console.log(countryLand)
+
+const countryIa = []
+for (const country of countries) {
+    if (country.endsWith('ia')){
+       countryIa.push(country)
+    } else continue
+}
+console.log(countryIa)
+
+let maxCountry = Math.max(...countryLength)
+console.log(maxCountry)
+for (const country of countries) {
+    if (country.length == maxCountry) {
+        console.log(country)
+    }
+}
+
+const fiveCountryLength = []
+for (const country of countries) {
+    if (country.length == 5) {
+        fiveCountryLength.push(country)
+    }
+}
+console.log(fiveCountryLength)
+
+const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+]
+
+const webtechLength = []
+for (const webtech of webTechs) {
+    webtechLength.push(webtech.length)
+}
+console.log(webtechLength)
+
+let longestWebTechs = Math.max(...webtechLength)
+console.log(longestWebTechs)
+for (const webtech of webTechs) {
+    if (webtech.length == longestWebTechs) {
+        console.log(webtech)
+    }
+}
+
+const webtechArr = []
+for (const webtech of webTechs) {
+    webtechArr.push([webtech, webtech.length])
+}
+console.log(webtechArr)
+
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+let MERN = '';
+for (const stack of mernStack) {
+    MERN += stack.slice(0, 1)
+}
+console.log(MERN)
+
+for (i = 0; i < webTechs.length; i++) {
+    console.log(webTechs[i])
+}
+
+const fruits = ['banana', 'orange', 'mango', 'lemon']
+const reverseFruits = []
+for (let i = fruits.length - 1; i >= 0; i--) {
+    reverseFruits.push(fruits[i])
+}
+console.log(reverseFruits)
+
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+]
+for (const arrItems of fullStack) {
+    for (const item of arrItems) {
+        console.log(item.toUpperCase())
+    }
+}
