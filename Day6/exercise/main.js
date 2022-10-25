@@ -564,6 +564,7 @@ console.log(longestCountry)
 
 for (const country of longCountries) {
     if (country.length == longestCountry) {
+        console.log(longCountries[longCountries.indexOf(country)])
         console.log(country)
     }
 }
