@@ -1,8 +1,8 @@
-import { countries } from "./countries.js"
-import { webTechs } from "./web_techs.js"
+// import { countries } from "./countries.js"
+// import { webTechs } from "./web_techs.js"
 
-console.log(countries)
-console.log(webTechs)
+// console.log(countries)
+// console.log(webTechs)
 
 //LEVEL 1
 const arr = Array()
@@ -47,6 +47,15 @@ itCompanies.forEach(company => {
    console.log(arrCompanies)
 })
 console.log(arrCompanies)
+
+//another way to loop true companies with more than 1 'o'
+let arrCompanies2 = []
+for (const company of itCompanies) {
+    if (company.lastIndexOf('o') != company.indexOf('o')) {
+        arrCompanies2.push(company)
+    }
+}
+console.log(arrCompanies2)
 
 let sortCompanies = itCompanies.sort()
 console.log(sortCompanies)
