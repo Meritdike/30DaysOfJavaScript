@@ -129,6 +129,24 @@ console.log(maxAge)
 let minAge = Math.min(...ages)
 console.log(minAge)
 
+//another way to find max and min numbers
+let maxAge1 = 0;
+let minAge1 = Number.POSITIVE_INFINITY;
+
+for (const age of ages) {
+    if (age > maxAge1) {
+        maxAge1 = age;
+    }
+}
+console.log(maxAge1)
+
+for (const age of ages) {
+    if (age < minAge1) {
+        minAge1 = age;
+    }
+}
+console.log(minAge1)
+
 let medianAge = ages.slice(Math.round((ages.length - 2) / 2), Math.round((ages.length + 1) / 2))
 console.log(medianAge)
 
