@@ -61,7 +61,14 @@ function stairs2(n) {
         console.log(stairs, i)
     }
 }
-stairs2(10/2)
+function stairs3(n) {
+    a = ''
+    for (let i = 0; i < n; i++) {
+        a += '#'
+        console.log(a)
+    }
+}
+stairs3(10/2)
 
 // n=4, where s = space
 // sss# i = 1, s = 3, # = 1
