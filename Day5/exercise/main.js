@@ -1,5 +1,5 @@
-import { countries } from "./countries.js"
-import { webTechs } from "./web_techs.js"
+// import { countries } from "./countries.js"
+// import { webTechs } from "./web_techs.js"
 
 // console.log(countries)
 // console.log(webTechs)
@@ -41,7 +41,7 @@ let arrCompanies = Array()
 itCompanies.forEach(company => {
     let eachCompany = company.match(/o/gi)
     console.log(eachCompany)
-    if (eachCompany == null || eachCompany.length == 1) {
+    if (eachCompany != null && eachCompany.length > 1) {
         arrCompanies.push(company)
     }
    console.log(arrCompanies)
