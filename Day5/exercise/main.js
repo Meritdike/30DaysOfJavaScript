@@ -1,8 +1,8 @@
-// import { countries } from "./countries.js"
-// import { webTechs } from "./web_techs.js"
+import { countries } from "./countries.js"
+import { webTechs } from "./web_techs.js"
 
-// console.log(countries)
-// console.log(webTechs)
+console.log(countries)
+console.log(webTechs)
 
 //LEVEL 1
 const arr = Array()
