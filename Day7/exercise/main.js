@@ -120,3 +120,4 @@ console.log(checkSeason('JUNe'));
 const findMax = (a, b, c) => Math.max(a,b,c)
 console.log(findMax(0, 10, 5))
 console.log(findMax(0, -10, -2))
+
