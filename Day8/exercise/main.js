@@ -72,4 +72,4 @@ const users = {
       isLoggedIn: false,
       points: 40
     }
-  }  
+  }
