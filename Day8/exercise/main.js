@@ -119,7 +119,7 @@ for (const key in users) {
     if (skills.includes('MongoDB') && skills.includes('Express') && skills.includes('React') && skills.includes('Node'))  console.log(key)
     else continue
 }
-//Set your name in the users object without modifying the original users object ie copy the original object and add new user
+//Set your name in the users object WITHOUT MODIFYING the original users object ie copy the original object and add new user
 let newUser = Object.assign({}, users)
 newUser['Merit'] = {email:'dike.merit@yahoo.com', skills: [ 'HTML', 'CSS', 'JavaScript', 'React'], age: 20, isLoggedIn: true, points: 70}
 console.log(newUser);
