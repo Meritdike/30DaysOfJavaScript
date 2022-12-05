@@ -73,3 +73,59 @@ const users = {
       points: 40
     }
   }
+
+
+let skillCounArr = []
+for (const key in users) {
+    let eachSkill = users[key].skills.length;
+    skillCounArr.push([key, eachSkill])
+}
+console.log(skillCounArr);
+
+let highest = '';
+for (const skill of skillCounArr) {
+    highest += skill[1]
+}
+let cpyNum = [...highest]
+let maxSkill = Math.max(...cpyNum)
+console.log(maxSkill);
+
+for (const key in users) {
+    let eachSkill = users[key].skills.length;
+    if (eachSkill === maxSkill) {
+        console.log(key);
+    } else continue
+}
+
+//another method of getting person with highest skills
+let userSkills = [], usersArr = Object.entries(users);
+for (let user of usersArr) {
+    userSkills.push([user[0], user[1].skills]);
+}
+console.log(userSkills);
+let mostSkills = userSkills.reduce((a, b) => a[1].length > b[1].length ? a : b)[0];
+console.log(mostSkills);
+
+
+let loggedIn = 0, points = 0
+for (const key in users) {
+    if (users[key].isLoggedIn === true) loggedIn += 1
+    if (users[key].points >= 50) points += 1
+}
+console.log(`Logged in users = ${loggedIn} Users having points greater than or equal to 50 = ${points}`);
+
+for (const key in users) {
+    let skills = users[key].skills
+    if (skills.includes('MongoDB') && skills.includes('Express') && skills.includes('React') && skills.includes('Node'))  console.log(key)
+    else continue
+}
+//Set your name in the users object without modifying the original users object ie copy the original object and add new user
+let newUser = Object.assign({}, users)
+newUser['Merit'] = {email:'dike.merit@yahoo.com', skills: [ 'HTML', 'CSS', 'JavaScript', 'React'], age: 20, isLoggedIn: true, points: 70}
+console.log(newUser);
+console.log(users);
+
+console.log(Object.keys(users))
+console.log(Object.values(users))
+
+//LEVEL 3
