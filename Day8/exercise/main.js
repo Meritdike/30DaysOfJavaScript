@@ -98,6 +98,16 @@ for (const key in users) {
 }
 
 //another method of getting person with highest skills
+let skillsNum = 0, userHighestSkill = ''
+for (const user of skillCounArr) {
+    if (user[1] > skillsNum) {
+        skillsNum = user[1]
+        userHighestSkill = user[0]
+    }
+}
+console.log(userHighestSkill);
+
+//another method of getting person with highest skills
 let userSkills = [], usersArr = Object.entries(users);
 for (let user of usersArr) {
     userSkills.push([user[0], user[1].skills]);
